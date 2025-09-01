@@ -1,0 +1,86 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Título de tu página</title>
+  <link rel="stylesheet" href="RepartidorEntrega.css">
+  <script>
+    // Verificar la existencia de la cookie al cargar la página
+    window.onload = function() {
+      // Verificar la existencia de la cookie 'tiempodevida'
+      if (!document.cookie.includes('tiempodevida')) {
+        // Si la cookie no está presente, redirigir o tomar alguna acción
+        alert('vuelva a iniciar secion');
+        window.location.href = 'pagina_de_redireccion.html'; // Cambia a la página de redirección que desees
+      }
+    };
+</script>
+</head>
+<body>
+  <header>
+
+  </header>
+
+  <nav>
+  <ul>
+    <div class="logo-container">
+      <img src="imagenes/logo.png" alt="Logo" class="logo">
+    </div>
+    <a href="VisorPaquetesGerente.html"><li>Paquetes</li></a>
+    <a href="RegistrarPaqueteGerente.php"><li>Registrar paquete</li></a>
+    <a href="RegistrarRemitenteGerente.html"><li>Registrar remitente</li></a>
+    <a href="ActualizarPaqueteGerente.php"><li>Actualizar paquete</li></a>
+    <a href="GerenteEntrega.html"><li>Crear entrega</li></a>
+    <a href="MantenedorTrabajador.php"><li>Administacion</li></a>
+  </ul>  
+  </nav><br><br><br>
+
+  <article>
+    <br>
+    <center>
+      <form action="Procesar_Entrega_Gerente.php" method="post">
+        <table>
+          <H2> Actualizar Entrega </H2><br>
+          <tr>
+            <td colspan="2">
+              <label for="paquete">Codigo de paquete:</label>
+              <br>
+              <input type="text" name="paquete" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Entrega">Entrega completada:</label>
+              <input type="checkbox" name="Entrega" required>
+            </td>
+          </tr>
+        </table><br>
+        <input type="submit" value="Guardar">
+      </form><br>
+    </center>
+  </article>
+
+  <br><br><br>
+
+  <footer>
+    <div class="container">
+      <div class="footercolumna">
+        <h4>Contacto</h4>
+        <ul>
+          <li><img src="fotos/wtsp.png" alt="wtsp" class="wtsp"><a>2123</a></li>
+          <li><a>a</a></li>
+        </ul>
+      </div>
+
+      <div class="footercolumna">
+        <h4>Redes sociales</h4>
+        <ul>
+          <li><a><img src="fotos/insta.png" class="insta">INSTAGRAM</a></li>
+          <li><a><img src="fotos/face.png" alt="face" class="face">FACEBOOK</a></li>
+          <li><a><img src="fotos/twitter.png" alt="twitter" class="twitter">TWITTER</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>

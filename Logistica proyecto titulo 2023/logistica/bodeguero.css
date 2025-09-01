@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+   box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #BDBBBF;
+    text-align: justify;
+    color: white;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  a{
+    font-weight:700;
+    font-size:15px;
+    font-family:Sans-serif;
+    text-decoration:none;
+    margin-bottom:70px;
+  
+  }
+  
+  .title2{
+    color:white;
+    font-family:'Quicksand',sans-serif;
+    font-size:40px;
+    font-weight:bold;
+  }
+  .introduce{
+   color:#ffffffb3;
+   font-family:'Quicksand',sans-serif;
+   line-height: 1.5;
+   font-size:17px;
+  
+  }
+  
+  .portada {
+  width: 1200px;
+  height: auto;
+  margin-right: auto; 
+  margin-left: auto; 
+  }
+  
+  nav a{
+    color: #e47b5f;
+    font-family:'Quicksand',sans-serif;
+  }
+  .logo-container {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  
+  .logo {
+    max-width: 250px; 
+  }
+nav ul {
+  background-color: #1a1468;
+  overflow: hidden;
+  color:white;
+  padding: 0;
+  text-align: center;
+  margin:0;
+}
+
+nav ul li {
+  display:inline-block;
+  padding: 20px;
+  
+}
+
+nav ul li:hover {
+  background-color: #1a1468;
+}
+/*articulo*/
+article {
+    flex-grow: 1; 
+  }
+ /*footer*/
+  footer {
+    background-color: #1a1468;
+    color: #e47b5f;
+    padding: 10px 0;
+    font-family:'Quicksand',sans-serif;
+  }
+  
+  footer img {
+    max-width: 18px; 
+    max-height: 18px; 
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footercolumna {
+    flex-basis: 50%;
+  }
+  
+  .footercolumna h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .footercolumna ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footercolumna li {
+    margin-bottom: 10px;
+  }
+  
+  .footercolumna a {
+    color: #e47b5f;
+    text-decoration: none;
+  }
+  
+  .footercolumna a:hover {
+    text-decoration: underline;
+  }

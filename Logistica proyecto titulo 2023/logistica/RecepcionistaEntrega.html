@@ -1,0 +1,64 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Título de tu página</title>
+  <link rel="stylesheet" href="trabajo.css">
+  <script>
+    // Verificar la existencia de la cookie al cargar la página
+    window.onload = function() {
+      // Verificar la existencia de la cookie 'tiempodevida'
+      if (!document.cookie.includes('tiempodevida')) {
+        // Si la cookie no está presente, redirigir o tomar alguna acción
+        alert('vuelva a iniciar secion');
+        window.location.href = 'pagina_de_redireccion.html'; // Cambia a la página de redirección que desees
+      }
+    };
+</script>
+</head>
+<body>
+  <header>
+
+  </header>
+
+  <nav>
+    <div class="logo-container">
+      <img src="imagenes/logo.png" alt="Logo" class="logo">
+    </div>
+    <ul>
+      <a href="recepcionista.html"><li>inicio</li></a>
+      <a href="RegistrarRemitente.html"><li>Registrar Remitente</li></a>
+      <a href="RegistrarPaquete.php"><li>Registrar Paquete</li></a>
+      <a href="visorpaquetes.html"><li>Ver paquetes</li></a>
+      <a href="RecepcionistaEntrega.html"><li>Registrar entrega</li></a>
+    </ul>
+  </nav><br><br><br>
+
+  <article>
+    <center>
+      <form action="Procesar_EntregaRecepcionista.php" method="post">
+        <table>
+            <tr>
+            <td>Codigo de paquete:</td>
+            <td><input type="text" name="paquete" required></td>
+        </tr>
+          <tr>
+            <td>Entrega completada:</td>
+            <td><input type="checkbox" name="Entrega" required></td>
+        </tr>
+            
+        </table>
+        <input type="submit" value="Guardar">
+      </form>
+    </center>
+  </article>
+
+  <br><br><br>
+
+  <footer>
+    <div class="container">
+      <!-- Contenido del pie de página -->
+    </div>
+  </footer>
+</body>

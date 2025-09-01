@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #BDBBBF;
+  text-align: justify;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  font-weight: 700;
+  font-size: 15px;
+  font-family: Sans-serif;
+  text-decoration: none;
+  margin-bottom: 70px;
+}
+
+.title2 {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.introduce {
+  color: #ffffffb3;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.portada {
+  width: 1200px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+nav a {
+  color: #e47b5f;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.logo-container {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.logo {
+  max-width: 250px; /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+nav ul {
+  background-color: #1a1468;
+  overflow: hidden;
+  color: white;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li:hover {
+  background-color: #1a1468;
+}
+
+/*articulo*/
+.title-section {
+  text-align: center;
+  margin-bottom: 20px;
+  /* Puedes ajustar este valor según sea necesario */
+  font-size: 28px;
+  /* Puedes ajustar el tamaño del texto */
+  color: #1a1468;
+}
+
+article {
+
+  flex-grow: 1; /* Esto asegura que el artículo ocupe el espacio restante */
+}
+
+.article-container {
+  font-family: 'Quicksand', sans-serif;
+  margin: 20px auto 0;
+  max-width: 60%;
+  color: #1a1468;
+  background-color: #E3E3E3;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.article-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto; /* Añade margen automático para centrar horizontalmente */
+  max-width: 400px; /* Puedes ajustar el ancho máximo según sea necesario */
+}
+
+.article-content,
+.datos-paquete {
+  max-width: 600px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+input[type="text"],
+select {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+input[type="submit"] {
+  background-color: #1a1468;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #e47b5f;
+}
+
+.center-container {
+  background-color: #BBBABA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  max-width: 400px;
+  margin: auto;
+  clear: both;
+}
+
+/*footer*/
+footer {
+  background-color: #1a1468;
+  margin-top: 246px;
+  color: #e47b5f;
+  padding: 10px 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+footer img {
+  max-width: 18px;
+  max-height: 18px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footercolumna {
+  flex-basis: 50%;
+}
+
+.footercolumna h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footercolumna ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footercolumna li {
+  margin-bottom: 10px;
+}
+
+.footercolumna a {
+  color: #e47b5f;
+  text-decoration: none;
+}
+
+.footercolumna a:hover {
+  text-decoration: underline;
+}

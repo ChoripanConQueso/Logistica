@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Título de tu página</title>
+  <link rel="stylesheet" href="">
+  <script>
+    // Verificar la existencia de la cookie al cargar la página
+    window.onload = function() {
+      // Verificar la existencia de la cookie 'tiempodevida'
+      if (!document.cookie.includes('tiempodevida')) {
+        // Si la cookie no está presente, redirigir o tomar alguna acción
+        alert('Vuelva a iniciar sesión');
+        window.location.href = 'pagina_de_redireccion.html'; // Cambia a la página de redirección que desees
+      }
+    };
+
+    // Función para realizar una solicitud al servidor y mostrar los paquetes en reparto
+    function obtenerPaquetesEnReparto() {
+      // Crear un objeto XMLHttpRequest
+      var xhr = new XMLHttpRequest();
+
+      // Definir la función que manejará la respuesta del servidor
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          // La solicitud fue exitosa, mostrar la respuesta en el elemento con id "contenido-paquetes"
+          document.getElementById("contenido-paquetes").innerHTML = xhr.responseText;
+        }
+      };
+
+      // Configurar la solicitud
+      xhr.open("POST", "Paquetes_Repartidor.php", true);
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.send(); // Enviar la solicitud POST sin datos adicionales
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <!-- ... Tu contenido de encabezado ... -->
+  </header>
+
+  <nav>
+    <!-- ... Tu contenido de navegación ... -->
+  </nav><br><br><br>
+
+  <article>
+    <br>
+    <center>
+      <!-- Contenedor donde se mostrará la información de los paquetes en reparto -->
+      <div id="contenido-paquetes"></div>
+      <br>
+      <!-- Botón para mostrar los paquetes -->
+      <button onclick="obtenerPaquetesEnReparto()">Mostrar Paquetes</button>
+    </center>
+  </article>
+
+  <br><br><br>
+
+  <footer>
+    <!-- ... Tu contenido de pie de página ... -->
+  </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <!-- logo de la óptica -->
+        <img src="logo.png" alt="Logo de Visión Óptima" class="logo">
+        <!-- imagen portada -->
+        <img src="personaconltentes.png" alt="Imagen de marcos de lentes" class="portada">
+      </header>
+      <nav>
+        <!-- barra de navegación -->
+        <a href="portada.html">Home</a>
+        <a href="reservadehoras.html">Reserva de horas</a>
+        <a href="productos.html">Productos</a>
+        <a href="sustentabilidad.html">Sustentabilidad</a>
+        <a href="sucursales.html">Sucursales</a>
+        <a href="quejas.html">Quejas</a>
+      </nav>
+<head>
+	<title>Sucursales optica</title>
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   		crossorigin=""/>		
+	<link rel="stylesheet" type="text/css" href="mapa.css"/>	
+     <!-- lista de sucursales segun coordenadas -->
+	<h1>sucursales</h1>
+	<select name="select-location" id="select-location">
+		<option value="-1">Seleccione una de nuestras sucursales:</option>
+		<option value="-33.442577, -70.769995">Pudahuel</option>
+		<option value="-33.582874, -70.704997">san Bernardo</option>	
+		<option value="-33.503444, -70.760947">Maipu</option>
+		<option value="-33.375004, -70.644606">Huechuraba</option>
+	</select>        
+	<div id="map"></div>
+</head>
+<body>	
+
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   		crossorigin=""></script>   		
+	
+	<script src="mapa.js"></script>
+    <!--el pie de pagina -->
+    <footer>
+        <div class="container">
+          <div class="footercolumna">
+            <h4>Contacto</h4>
+            <ul>
+              <li><img src="wtsp.png" alt="wtsp" class="wtsp">+56945793182</li>
+              <li>VisionOptima@gmail.com</li>
+            </ul>
+          </div>
+      
+          <div class="footercolumna">
+            <h4>Servicios</h4>
+            <ul>
+              <li>Convenios con empresas</li>
+              <li>Operativos oftalmológicos</li>
+              <li>Visitas a domicilio</li>
+              <li>Garantía de 3 meses</li>
+            </ul>
+          </div>
+      
+          <div class="footercolumna">
+            <h4>Redes sociales</h4>
+            <ul>
+              <li><a><img src="insta.png" alt="insta" class="insta">INSTAGRAM</a></li>
+              <li><a><img src="face.png" alt="face" class="face">FACEBOOK</a></li>
+              <li><a><img src="twitter.png" alt="twitter" class="twitter">TWITTER</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>   
+</html>

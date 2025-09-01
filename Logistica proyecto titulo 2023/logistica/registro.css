@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1a1468;
+  }
+  
+  .registration-container {
+    position: relative;
+    background-color: #332e8e;
+    border: 1px solid #332e8e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 500px; /* Ajusta el ancho según tus necesidades */
+    text-align: center;
+  }
+
+  .registration-container img {
+    width: 100%;
+    max-width: 1000px; /* Puedes ajustar este valor según tus necesidades */
+    height: auto;
+  }
+  
+  .registration-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .form-group button {
+    background-color: #e47b5f;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .go-back {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }

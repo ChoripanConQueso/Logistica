@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visión de Usuario</title>
+</head>
+<body>
+    <h2>Visión de Usuario</h2>
+    <table>
+        <tr>
+            <th>Código del Paquete</th>
+            <th>Estado del Paquete</th>
+        </tr>
+        <script>
+            // Recupera los datos de seguimiento de paquetes desde el almacenamiento local
+            const datosSeguimiento = JSON.parse(sessionStorage.getItem('seguimiento'));
+
+            if (datosSeguimiento) {
+                document.write("<tr><td>" + datosSeguimiento.codigo + "</td><td>" + datosSeguimiento.estado + "</td></tr>");
+            }
+        </script>
+    </table>
+</body>
+</html>
